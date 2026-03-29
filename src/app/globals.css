@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-melon-900: #0C4A3E;
+  --color-melon-800: #126B58;
+  --color-melon-700: #1A8C73;
+  --color-melon-100: #E6F4F1;
+  --color-melon-50: #F0F9F7;
+
+  --color-gray-950: #0F172A;
+  --color-gray-900: #1E293B;
+  --color-gray-600: #475569;
+  --color-gray-400: #94A3B8;
+  --color-gray-200: #E2E8F0;
+  --color-gray-100: #F1F5F9;
+  --color-gray-50: #F8FAFC;
+  --color-white: #FFFFFF;
+
+  --color-amber-500: #F59E0B;
+  --color-amber-100: #FEF3C7;
+  --color-red-500: #EF4444;
+  --color-red-100: #FEE2E2;
+
+  --font-heading: "Inter", system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
