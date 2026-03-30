@@ -1,4 +1,4 @@
-import { Hero, Problem, Solution, Services, Packages, Proof, Faq, FooterCta } from '@/components'
+import { Hero, Problem, Solution, Services, Packages, Proof, Faq, ContactForm, FooterCta } from '@/components'
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <Packages />
       <Proof />
       <Faq />
+      <ContactForm />
       <FooterCta />
     </main>
   )

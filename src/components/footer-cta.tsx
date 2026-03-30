@@ -1,6 +1,6 @@
 'use client'
 
-import { siteConfig, TALLY_FORM_URL } from '@/config/site'
+import { siteConfig } from '@/config/site'
 
 interface FooterCtaProps {
   headline?: string
@@ -26,7 +26,7 @@ export default function FooterCta({
   }
 
   return (
-    <section className="bg-melon-900 text-white py-16 md:py-24">
+    <footer className="bg-melon-900 text-white py-16 md:py-24">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           {headline || config.ctaHeadline}
@@ -35,7 +35,7 @@ export default function FooterCta({
           {subheadline || config.ctaSubheadline}
         </p>
         <a
-          href={TALLY_FORM_URL}
+          href="#contact"
           onClick={() => trackCTA('Footer CTA')}
           className="inline-flex items-center justify-center px-10 py-4 bg-melon-800 hover:bg-melon-700 text-white font-semibold rounded-lg transition-colors text-lg"
         >
@@ -49,6 +49,6 @@ export default function FooterCta({
           <p className="text-gray-500 text-sm mt-8">{config.copyright}</p>
         </div>
       </div>
-    </section>
+    </footer>
   )
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import { siteConfig, TALLY_FORM_URL } from '@/config/site'
+import { siteConfig } from '@/config/site'
 
 interface HeroProps {
   headline?: string
@@ -42,7 +42,7 @@ export default function Hero({
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href={TALLY_FORM_URL}
+              href="#contact"
               onClick={() => trackCTA('Hero - Primary CTA')}
               className="inline-flex items-center justify-center px-8 py-4 bg-melon-800 hover:bg-melon-700 text-white font-semibold rounded-lg transition-colors"
             >
