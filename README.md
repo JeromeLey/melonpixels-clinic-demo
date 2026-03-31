@@ -63,6 +63,13 @@ npm run start
 
 4. **Deployment**: This demo was built locally. For actual deployment, consider Vercel, Netlify, or Philippine-friendly hosting providers.
 
+## Deployment
+
+- **Live URL**: https://jeromeley.github.io/melonpixels-clinic-demo/
+- **SSL**: Enabled (GitHub Pages / Let's Encrypt)
+- **CI/CD**: GitHub Actions (see `.github/workflows/ci.yml`)
+- **Branch**: `main` → GitHub Pages via `actions/deploy-pages@v4`
+
 ## Verification
 
 - [x] Build succeeds: `npm run build`
