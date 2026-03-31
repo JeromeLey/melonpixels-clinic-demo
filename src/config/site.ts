@@ -110,22 +110,22 @@ export const siteConfig: SiteConfig = {
     subheadline: 'We\'ve helped dental and medical clinics across the Philippines transform their online presence. More Google visibility. More bookings. Less empty chairs.',
     features: [
       {
-        icon: '🔍',
+        icon: 'Search',
         title: 'Show Up on Google',
         description: 'Local SEO that puts your clinic in front of patients searching for dental services in your area. Average clients see 40% more Google bookings within 60 days.',
       },
       {
-        icon: '📱',
+        icon: 'Smartphone',
         title: 'Mobile-First Design',
         description: '85% of your patients book on their phones. We build websites that look beautiful and work flawlessly on every device.',
       },
       {
-        icon: '📅',
+        icon: 'Calendar',
         title: 'Easy Online Booking',
         description: 'Integrate appointment booking directly on your website. Reduce no-shows with automated SMS reminders.',
       },
       {
-        icon: '⭐',
+        icon: 'Star',
         title: 'Build Trust Fast',
         description: 'Showcase your services, team, and patient testimonials in a way that makes new patients confident to book their first appointment.',
       },

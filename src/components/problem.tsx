@@ -17,7 +17,7 @@ export default function Problem({
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-melon-700 font-semibold mb-4">{label || config.label}</p>
+          <p className="text-primary-700 font-semibold mb-4">{label || config.label}</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             {headline || config.headline}
           </h2>

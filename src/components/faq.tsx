@@ -11,7 +11,7 @@ export default function Faq({
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-3xl mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-melon-700 font-semibold mb-4">FAQ</p>
+          <p className="text-primary-700 font-semibold mb-4">FAQ</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             {title}
           </h2>

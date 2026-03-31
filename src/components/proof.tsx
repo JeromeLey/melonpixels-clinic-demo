@@ -16,10 +16,10 @@ export default function Proof({
   const logos = config.logos || []
 
   return (
-    <section className="py-16 md:py-24 bg-melon-50">
+    <section className="py-16 md:py-24 bg-primary-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-melon-700 font-semibold mb-4">{label || config.label}</p>
+          <p className="text-primary-700 font-semibold mb-4">{label || config.label}</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             {title || config.title}
           </h2>
@@ -34,8 +34,8 @@ export default function Proof({
               <div key={index} className="bg-white p-6 rounded-xl border border-gray-200">
                 <p className="text-gray-700 mb-4 italic">"{testimonial.quote}"</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-melon-100 flex items-center justify-center">
-                    <span className="text-melon-800 font-semibold">{testimonial.name.charAt(0)}</span>
+                  <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center">
+                    <span className="text-primary-800 font-semibold">{testimonial.name.charAt(0)}</span>
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">{testimonial.name}</p>

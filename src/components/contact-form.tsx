@@ -14,7 +14,7 @@ export default function ContactForm({
   const tallyEmbedUrl = `${TALLY_FORM_URL}&alignLeft=1&hideTitle=1&dynamicHeight=1`
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-melon-50">
+    <section id="contact" className="py-16 md:py-24 bg-primary-50">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">

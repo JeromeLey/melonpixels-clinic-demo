@@ -30,10 +30,10 @@ export default function Hero({
   }
 
   return (
-    <section className="bg-gradient-to-br from-melon-900 via-gray-900 to-melon-800 text-white">
+    <section className="bg-gradient-to-br from-primary-900 via-gray-900 to-primary-800 text-white">
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-24">
         <div className="max-w-3xl">
-          <p className="text-melon-100 font-medium mb-4">{label || config.label || business.name}</p>
+          <p className="text-primary-100 font-medium mb-4">{label || config.label || business.name}</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
             {headline || config.headline}
           </h1>
@@ -44,7 +44,7 @@ export default function Hero({
             <a
               href="#contact"
               onClick={() => trackCTA('Hero - Primary CTA')}
-              className="inline-flex items-center justify-center px-8 py-4 bg-melon-800 hover:bg-melon-700 text-white font-semibold rounded-lg transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-primary-800 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors"
             >
               {primaryCta || config.primaryCta}
             </a>
@@ -63,15 +63,15 @@ export default function Hero({
           <p className="text-gray-400 text-sm mb-4">Serving {business.location}</p>
           <div className="flex flex-wrap gap-8 text-gray-400 text-sm">
             <span className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-melon-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
+              <svg className="w-5 h-5 text-primary-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
               Mobile-first design
             </span>
             <span className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-melon-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
+              <svg className="w-5 h-5 text-primary-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
               Fast turnaround
             </span>
             <span className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-melon-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
+              <svg className="w-5 h-5 text-primary-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
               Philippine-based team
             </span>
           </div>

@@ -36,12 +36,12 @@ export default function PricingCard({
     <div
       className={`bg-white rounded-2xl p-8 border-2 transition-all ${
         highlighted
-          ? 'border-melon-800 ring-4 ring-melon-100'
+          ? 'border-primary-800 ring-4 ring-primary-100'
           : 'border-gray-200 hover:border-gray-300'
       }`}
     >
       {highlighted && (
-        <span className="inline-block px-3 py-1 bg-melon-100 text-melon-800 text-sm font-medium rounded-full mb-4">
+        <span className="inline-block px-3 py-1 bg-primary-100 text-primary-800 text-sm font-medium rounded-full mb-4">
           Most Popular
         </span>
       )}
@@ -54,7 +54,7 @@ export default function PricingCard({
       <ul className="space-y-3 mb-8">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start gap-3 text-gray-600">
-            <svg className="w-5 h-5 text-melon-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
             {feature}
@@ -67,7 +67,7 @@ export default function PricingCard({
           onClick={() => onCtaClick(`Package - ${name} - Inquire`)}
           className={`block w-full text-center px-6 py-3 rounded-lg font-semibold transition-colors ${
             highlighted
-              ? 'bg-melon-800 hover:bg-melon-700 text-white'
+              ? 'bg-primary-800 hover:bg-primary-700 text-white'
               : 'bg-gray-900 hover:bg-gray-800 text-white'
           }`}
         >
