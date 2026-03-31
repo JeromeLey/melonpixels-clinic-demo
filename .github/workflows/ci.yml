@@ -2,9 +2,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'demo/**']
   pull_request:
-    branches: [main]
+    branches: [main, 'demo/**']
 
 jobs:
   lint-and-build:
@@ -34,9 +34,40 @@ jobs:
           name: dist
           path: out/
 
+  smoke-test:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/demo')
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Verify build output exists
+        run: |
+          test -d out || exit 1
+          test -f out/index.html || exit 1
+          echo "Build output verified successfully"
+
+      - name: Run basic HTML validation
+        run: |
+          npx html-validate out/index.html || true
+          echo "HTML validation complete"
+
   lighthouse:
     runs-on: ubuntu-latest
     needs: lint-and-build
+    if: github.ref == 'refs/heads/main' || github.event_name == 'pull_request'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4

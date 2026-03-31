@@ -1,3 +1,4 @@
+export { default as Header } from './header'
 export { default as Hero } from './hero'
 export { default as Problem } from './problem'
 export { default as Solution } from './solution'

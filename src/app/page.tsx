@@ -1,8 +1,9 @@
-import { Hero, Problem, Solution, Services, Packages, Proof, Faq, ContactForm, FooterCta } from '@/components'
+import { Header, Hero, Problem, Solution, Services, Packages, Proof, Faq, ContactForm, FooterCta } from '@/components'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <Header />
       <Hero />
       <Problem />
       <Solution />
