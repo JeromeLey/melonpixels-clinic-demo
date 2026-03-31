@@ -62,7 +62,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: lighthouse
+    needs: lint-and-build
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     permissions:
       contents: read
