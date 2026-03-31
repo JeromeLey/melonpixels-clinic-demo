@@ -1,4 +1,5 @@
 import { siteConfig } from '@/config/site'
+import { X } from 'lucide-react'
 
 interface ProblemProps {
   label?: string
@@ -25,8 +26,8 @@ export default function Problem({
         <div className="space-y-6">
           {(points || config.points).map((point, index) => (
             <div key={index} className="flex items-start gap-4 bg-white p-6 rounded-xl border border-gray-200">
-              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-600 flex items-center justify-center font-bold">
-                ✕
+              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 text-red-600 flex items-center justify-center">
+                <X size={18} strokeWidth={2} />
               </span>
               <p className="text-lg text-gray-700 pt-1">{point}</p>
             </div>
