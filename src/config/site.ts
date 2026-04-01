@@ -1,4 +1,4 @@
-export const TALLY_FORM_URL = 'https://tally.so/r/w95xj7'
+export const TALLY_FORM_URL = 'https://tally.so/forms/w95xj7'
 
 export interface SiteConfig {
   business: {

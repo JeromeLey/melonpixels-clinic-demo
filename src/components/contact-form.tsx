@@ -35,6 +35,7 @@ export default function ContactForm({
             title="Contact Form"
             className="rounded-lg"
             style={{ borderRadius: '8px' }}
+            loading="lazy"
           />
         </div>
       </div>
