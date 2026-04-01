@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: siteConfig.meta.title,
   description: siteConfig.meta.description,
   icons: {
-    icon: '/favicon.ico',
+    icon: 'https://jeromeley.github.io/melonpixels-clinic-demo/favicon.ico',
   },
   openGraph: {
     title: siteConfig.meta.title,
