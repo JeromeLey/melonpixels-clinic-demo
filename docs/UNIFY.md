@@ -2,7 +2,7 @@
 
 ## What Shipped
 
-A mobile-first landing page for a Philippine dental clinic with 8 sections and a working contact form. The site is live at `https://melonpixels.github.io/clinic-demo/`.
+A mobile-first landing page for a Philippine dental clinic with 8 sections and a working contact form. The site is live at `https://jeromeley.github.io/melonpixels-clinic-demo/`.
 
 ### Components Delivered
 - Hero with CTA
