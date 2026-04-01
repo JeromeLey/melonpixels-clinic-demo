@@ -96,7 +96,12 @@ jobs:
     needs: lint-and-build
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     permissions:
-      contents: write
+      pages: write
+      id-token: write
+      contents: read
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Download build artifact
         uses: actions/download-artifact@v4
@@ -104,9 +109,11 @@ jobs:
           name: dist
           path: out
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload to GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
         with:
-          publish_dir: ./out
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
+          path: ./out
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
