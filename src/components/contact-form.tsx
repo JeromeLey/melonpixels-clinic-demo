@@ -11,7 +11,7 @@ export default function ContactForm({
   title = 'Get In Touch',
   subtitle = "Ready to transform your clinic's online presence? Fill out the form below and we'll be in touch within 24 hours.",
 }: ContactFormProps) {
-  const tallyEmbedUrl = `${TALLY_FORM_URL}&alignLeft=1&hideTitle=1&dynamicHeight=1`
+  const tallyEmbedUrl = `${TALLY_FORM_URL}?embed=true&alignLeft=1&hideTitle=1&dynamicHeight=1`
 
   return (
     <section id="contact" className="py-16 md:py-24 bg-primary-50">
