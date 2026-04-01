@@ -46,7 +46,7 @@ export default function FooterCta({
           <p className="text-gray-400 text-sm">{business.location}</p>
           {business.phone && <p className="text-gray-400 text-sm">{business.phone}</p>}
           {business.email && <p className="text-gray-400 text-sm">{business.email}</p>}
-          <p className="text-gray-500 text-sm mt-8">{config.copyright}</p>
+          <p className="text-gray-400 text-sm mt-8">{config.copyright}</p>
         </div>
       </div>
     </footer>
