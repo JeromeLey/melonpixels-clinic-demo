@@ -37,6 +37,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://tally.so" />
         <link rel="dns-prefetch" href="https://tally.so" />
+        <link rel="preconnect" href="https://o407628.ingest.us.sentry.io" />
+        <link rel="dns-prefetch" href="https://o407628.ingest.us.sentry.io" />
       </head>
       <body className="antialiased text-gray-900 bg-white">{children}</body>
     </html>
